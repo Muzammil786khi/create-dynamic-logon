@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-in-container">
+            <form id="signInForm">
+                <h1>Sign In</h1>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <button class="bot1" type="submit">Login</button>
+                <span>Don't have an account? </span>
+            </form>
+        </div>
+        
+        <div class="form-container sign-up-container">
+            <form id="signUpForm">
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <button class="bot1" type="submit">Sign Up</button>
+                <span>Already have an account? </span>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Dynamic Login</p>
+                   <span> <button class="ghost" id="signIn"><a href="#" id="switchToSignIn">Sign In</a></button></span><br><br>
+                   <span><button type="submit" class="ghost" id="signIn"><a href="#" id="switchToSignUp">Sign Up</a></button></span>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
